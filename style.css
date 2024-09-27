@@ -10,6 +10,15 @@ body {
 
 }
 
+header {
+    width: 100%;
+    height: fit-content;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(247, 152, 168, 0.5);
+}
+
 h1 {
     display: flex;
     align-items: center;
@@ -36,6 +45,21 @@ h1 {
     height: 25px;
     width: 25px;
     text-align: center;
+}
+
+#progressPercentage {
+    color: white;
+}
+
+#progressBack {
+    width: 25%;
+    background-color: rgb(255, 210, 210);
+}
+
+#progressBar {
+    width: 0%;
+    height: 15px;
+    background-color: rgb(247, 152, 168);
 }
 
 .container, .main-input {

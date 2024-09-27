@@ -5,15 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To-Do</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-        <!-- <script src="todo.js" defer></script> -->
         <script src="main.js" defer></script>
     </head>
+
     <body>
-        <h1>To-Do</h1>
-        <div class="main-input" id="main-input">
-            <input id="input" type="text" placeholder="Enter your text here..." autofocus>
-            <button id="add">+</button>
-        </div>
+        <header>
+            <h1>To-Do</h1>
+
+            <div class="main-input" id="main-input">
+                <input type="date" id="due-date" placeholder="Due Date">
+
+                <input id="input" type="text" placeholder="Enter your text here..." autofocus>
+                <button id="add">+</button>
+            </div>
+        </header>
+        
+        <select id="category">
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+
+        <select>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
         <div class="container">
             <article id="to-do">
                 <h3>Priority</h3>
@@ -22,5 +40,13 @@
                 <h3>Completed</h3>
             </article>
         </div>
+
+        <div id="progress">
+            <p id="progressPercentage"></p>
+            <div id="progressBack">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+        
     </body>
 </html>
